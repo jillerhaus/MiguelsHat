@@ -11,7 +11,6 @@ void setup() {
   pinMode(PIN_HALL_SENSOR, INPUT_PULLUP);
   pinMode(PIN_LED, OUTPUT);
   lcd.init();
-  // attachInterrupt(digitalPinToInterrupt(PIN_HALL_SENSOR), check_state, CHANGE);
 }
 
 void loop() {
@@ -26,7 +25,6 @@ void loop() {
     lcd.print("Techn. Defekt");
     lcd.setCursor(0, 1);
     lcd.print("Zug f\xE1llt aus.");
-    // lcd.print("Ger\xE1t");
     displaying = true;
   }
 
