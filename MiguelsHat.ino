@@ -2,7 +2,7 @@
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 bool displaying {false};
-#define PIN_HALL_SENSOR 2
+#define PIN_HALL_SENSOR 4
 #define PIN_LED 13
 
 volatile bool detected = true;
